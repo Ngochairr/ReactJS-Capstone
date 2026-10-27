@@ -1,0 +1,83 @@
+/* Main menu */
+.footer-main {
+  min-height: 226px;
+  padding: 25px 0;
+  background: #fff;
+}
+
+.footer-column {
+  min-height: 175px;
+  padding: 0 40px;
+}
+
+.footer-column + .footer-column {
+  border-left: 1px solid #dedd dc;
+  border-left: 1px solid #dedddc;
+}
+
+.footer-column h5 {
+  margin: 0 0 15px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 8px;
+}
+
+.footer-column a {
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 600;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+/* Copyright bar */
+.footer-bottom {
+  min-height: 74px;
+  padding: 20px 14px;
+  background: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .footer-column {
+    padding: 20px 24px;
+    min-height: auto;
+  }
+
+  .footer-column + .footer-column {
+    border-left: none;
+    border-top: 1px solid #dedddc;
+  }
+
+  .footer-bottom p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}

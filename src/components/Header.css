@@ -1,0 +1,157 @@
+.site-header {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+}
+
+/* Black header */
+
+.top-header {
+  height: 50px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.header-logo img {
+  width: 116px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 100%;
+}
+
+.header-actions a,
+.header-logout {
+  color: #f7f7f7;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+}
+
+.header-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.header-search i {
+  font-size: 24px;
+}
+
+.header-cart {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.header-cart i {
+  font-size: 26px;
+}
+
+.header-auth-link {
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.header-logout {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* White navigation */
+
+.category-nav {
+  height: 50px;
+  background: #fff;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  height: 100%;
+}
+
+.nav-links a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.nav-links a.active {
+  font-weight: 400;
+}
+
+.nav-links a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -13px;
+  width: 60px;
+  height: 2px;
+  background: #030303;
+}
+
+/* Responsive */
+
+@media (max-width: 576px) {
+  .top-header {
+    padding: 0 12px;
+  }
+
+  .header-logo img {
+    width: 85px;
+  }
+
+  .header-actions {
+    gap: 10px;
+  }
+
+  .header-search {
+    font-size: 16px;
+  }
+
+  .header-cart {
+    font-size: 20px;
+  }
+
+  .header-auth-link {
+    font-size: 12px;
+  }
+
+  .category-nav {
+    padding: 0 12px;
+    overflow-x: auto;
+  }
+
+  .nav-links {
+    gap: 20px;
+    width: max-content;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+  }
+}
