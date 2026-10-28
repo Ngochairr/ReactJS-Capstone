@@ -37,3 +37,5 @@ npm run build
 - Ảnh sản phẩm được lấy từ các field phổ biến `image`, `img`, `imageUrl`, `imgUrl`; tên và giá cũng hỗ trợ nhiều tên field. Hãy chỉnh `ProductCard.jsx` nếu model của API dùng tên khác.
 - Trang Profile chỉ gọi các endpoint được nêu trong đề. Order history và Favourite là giao diện mẫu vì ảnh không cung cấp API tương ứng.
 - Cơ chế ProtectedRoute kiểm tra user/token đã lưu. Nếu backend có endpoint xác minh token hoặc refresh token, bổ sung vào flow auth.
+
+Báo Cáo: https://docs.google.com/spreadsheets/d/1GODbZAC7UwMJgcGZducXTh98h_dD2-ZMR7IP34nIYts/edit?gid=0#gid=0
